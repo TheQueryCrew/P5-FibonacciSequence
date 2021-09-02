@@ -13,12 +13,12 @@
 
 Input:
 
-```
+```Python
 Enter number of elements required : 4
 ```
 
 Output:
 
-```
+```Python
 Fibonacci Sequence for 4 elements is : 0, 1, 1, 2
 ```
