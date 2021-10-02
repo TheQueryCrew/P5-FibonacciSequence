@@ -1,21 +1,19 @@
-#include <bits/stdc++.h>
+//Fibonacci Series using Recursion
+#include<bits/stdc++.h>
 using namespace std;
 
-void fibonacci_seq(int n){
-    int a = 0;
-    int b=1;
-    cout<<a;
-    n--;
-    while(n--){        
-        int x = a+b;
-        a = b;
-        b=x;
-        cout<<" , "<<a;
-    }
+int fib(int n)
+{
+	if (n <= 1)
+		return n;
+	return fib(n-1) + fib(n-2);
 }
-int main(){
-    int n;
-    cin>>n;
-    fibonacci_seq(n);
-    return 0;
+
+int main ()
+{
+	int n = 9;
+	cout << fib(n);
+	getchar();
+	return 0;
 }
+
